@@ -1,0 +1,7 @@
+﻿4/zl_h_K0m-QKSP-zAYD8wof0aMQf3nNuLU-73qGdQoaY
+
+4/4c5kYEDYopuxrZC841B-kuvskhiwPA5vzue-nSWCy9E
+
+
+https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&client_id=550516889912.apps.googleusercontent.com&access_type=offlin
+e

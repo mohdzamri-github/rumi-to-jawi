@@ -1,0 +1,22 @@
+https://cloud.google.com/appengine/docs/standard/python/tools/appcfg-arguments
+
+download source file
+python2 /usr/lib/google-cloud-sdk/platform/google_appengine/appcfg.py
+    -A rumi-to-jawi -V 13 download_app ~/src/rumi-to-jawi-v13
+
+
+to run on local server
+~/bin/google-cloud-sdk/bin/dev_appserver.py app.yaml.ori
+
+to deploy
+gcloud app ..
+
+analytic
+https://analytics.google.com/
+
+update
+
+python2 /usr/lib/google-cloud-sdk/platform/google_appengine/appcfg.py update 
+-A rumi-to-jawi -V 14 rumi-to-jawi-v13
+
+https://console.cloud.google.com/appengine/versions?project=rumi-to-jawi&serviceId=default
