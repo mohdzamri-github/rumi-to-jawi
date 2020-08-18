@@ -95,26 +95,27 @@ def transliterate():
     #print "hello world"
     #print("The email address is in signup function '" + email + "'")
 
-    rumi.lower().strip()
+    # rumi.lower().strip() # have no effect!! 8/8/2020
+    r = rumi.lower().strip()
 
-    if rumi in rjDict1:
-    	if rumi in rjDict2 and rumi in rjDict3:
-    		return render_template('transliterate.html', rumi = rumi,
-          jawi = rjDict1[rumi], jawi2 = rjDict2[rumi], jawi3 = rjDict3[rumi],
+    if r in rjDict1:
+    	if r in rjDict2 and r in rjDict3:
+    		return render_template('transliterate.html', rumi = r,
+          jawi = rjDict1[r], jawi2 = rjDict2[r], jawi3 = rjDict3[r],
           latest_changes=latest_changes)
-    	elif rumi in rjDict2:
-    		return render_template('transliterate.html', rumi = rumi, jawi = rjDict1[rumi],
-          jawi2 = rjDict2[rumi], latest_changes=latest_changes)
+    	elif r in rjDict2:
+    		return render_template('transliterate.html', rumi = r, jawi = rjDict1[r],
+          jawi2 = rjDict2[r], latest_changes=latest_changes)
     	else:
-    		return render_template('transliterate.html', rumi = rumi,
-          jawi = rjDict1[rumi],latest_changes=latest_changes)
+    		return render_template('transliterate.html', rumi = r,
+          jawi = rjDict1[r],latest_changes=latest_changes)
     else:
-    	guest1 = edits1(rumi)
+    	guest1 = edits1(r)
     	guest2 = []
     	for c in guest1:
     		if c in rjDict1:
     			guest2.append(c)
-    	return render_template('not_found_transliterasi.html', rumi = rumi,
+    	return render_template('not_found_transliterasi.html', rumi = r,
         guesses = guest2,latest_changes=latest_changes)
     # return pass
 # set the secret key.  keep this really secret:
