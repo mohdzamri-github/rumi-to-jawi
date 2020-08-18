@@ -73,8 +73,8 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 {% for r in name_rumi %}
-                <font size="+2">{{r}}</font> &nbsp;
-                <font size="+4">({{name_jawi[name_rumi.index(r)]}})</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                <font size="+2" face="Times New Roman">{{r}}</font> &nbsp;
+                <font size="+4" face="Arabic Typesetting">({{name_jawi[name_rumi.index(r)]}})</font>&nbsp;&nbsp;&nbsp;&nbsp;
                 {% endfor %}
             </div>
         </div>
@@ -82,7 +82,7 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 {% for j in name_jawi %}
-                <font size="+4">{{j}}</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                <font size="+4" face="Arabic Typesetting">{{j}}</font>&nbsp;&nbsp;&nbsp;&nbsp;
                 {% endfor %}
             </div>
         </div>
